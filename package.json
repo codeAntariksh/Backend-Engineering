@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "This Package Contains My Code and Details regarding Backend Engineering",
+  "homepage": "https://github.com/codeAntariksh/Backend-Engineering#readme",
+  "bugs": {
+    "url": "https://github.com/codeAntariksh/Backend-Engineering/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeAntariksh/Backend-Engineering.git"
+  },
+  "license": "ISC",
+  "author": "Antarikshya Mitra",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "figlet": "^1.9.4",
+    "give-me-a-joke": "^0.5.1"
+  },
+  "devDependencies": {}
+}
