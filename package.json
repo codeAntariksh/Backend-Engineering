@@ -18,8 +18,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "express": "^5.2.1",
     "figlet": "^1.9.4",
-    "give-me-a-joke": "^0.5.1"
-  },
-  "devDependencies": {}
+    "give-me-a-joke": "^0.3.2"
+  }
 }
