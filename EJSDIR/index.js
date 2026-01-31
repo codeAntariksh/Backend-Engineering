@@ -1,7 +1,8 @@
 import express from 'express';
 const app = express();
 const PORT = 8000;
-
+app.use(express.static("/public/css"));
+app.use(express.static("/public/js"));
 app.set("view engine","ejs");
 
 

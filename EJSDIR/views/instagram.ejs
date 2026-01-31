@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram</title>
-</head>
+<%- include("includes/head.ejs") %>
 <body>
     <h2>
         Welcome to Profile of <%= username %>
@@ -19,7 +13,10 @@
             <li><%= user %></li>
         <%}%>
     </ul>
+    <%- include("includes/footer.ejs") %>
+    
 </body>
+<script src="app.js"></script>
 </html>
 
 
