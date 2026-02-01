@@ -3,7 +3,7 @@ const app = express();
 const PORT = 8080;
 // app.use(express.static('FrontEnd'));
 // app.use(express.)
-app.use(express.static('public'));
+app.set(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/register", (req, res) => {
