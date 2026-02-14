@@ -1,2 +1,4 @@
 Now Moving on to Learn Databases - Relational Database MySQL & NoSQL - MongoDB
 I have some prior knowledge of MySQL & DBMS which will prove helpful
+
+:earnt the basics of MongoDB
