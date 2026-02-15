@@ -1,0 +1,91 @@
+import mongoose from "mongoose";
+
+// mongoose.connect("mongodb://localhost:27017/test");
+// AWAITS for a Promise since it is an asynchronus Process
+
+main().then((res) => {
+	console.log("Connection Successful");
+}).catch(err => console.log(err));
+
+async function main() {
+	await mongoose.connect("mongodb://localhost:27017/test");
+}
+
+// Establishing a Schema
+const userSchema = new mongoose.Schema({
+	name:String,
+	email:String,
+	age: Number,
+});
+
+// Establishing Models
+// Calling Model Class with Constructor
+const User = mongoose.model("User",userSchema);
+
+// Inserting Documents in the Collection
+const user1 = new User({
+	name: "Adam",
+	email: "adamyahoo.in",
+	age: 48,
+});
+
+const user2 = new User({
+	name: "Eve",
+	email: "eveyahoo.in",
+	age:36,
+});
+
+user1.save().then((res) => {
+	console.log(res);
+})
+.catch((err) => {
+	console.log(err);
+});
+user2.save().then((res) => {
+	console.log(res)
+}).catch((err) => {
+	console.log(err)
+});;
+
+User.insertMany([
+	{name:"Bruce",age:23,email:"batman@yahoo.in"},
+	{name:"Alfred",age:45,email:"butler@gmail.com"},
+	{name:"Rachel",age:22,email:"rachelmylove@gmail.com"},
+]).then((res) => {
+	console.log(res);
+}).catch((err) => {
+	console.log(err);
+});
+
+User.find({}).then((res) => {
+console.log(res); 
+}).catch((err) => {
+	console.log(err);
+});
+
+
+User.findOne({age:{$gt:40}}).then((res) =>{
+	console.log("Printing People with Users having Age>40");
+	console.log(res);
+});
+
+User.findById("699180a2e22be48408b5632f").then((res) => {
+	console.log(res);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
