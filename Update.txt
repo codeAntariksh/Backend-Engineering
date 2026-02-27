@@ -1,11 +1,4 @@
 Now Moving on to Learn Databases - Relational Database MySQL & NoSQL - MongoDB
 I have some prior knowledge of MySQL & DBMS which will prove helpful
 
-:earnt the basics of MongoDB
-
-Progress Halted due to Midsem 
-Exam day1 Tmw
-Exam day2 Tmw
-Exam day3 Tmw
-Exam day4 Tmw
-Exam day5 Tmw
+Learnt the basics of MongoDB
